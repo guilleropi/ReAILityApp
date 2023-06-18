@@ -2,6 +2,7 @@
 <p align="center">
   <img height="300" src="app_screenshot.png">
 </p>
+
 ## Description
 This is an app to share your prompting creativity using OpenAI's DALL-E image generator.
 It will allow you to create a prompt, and then generate an image based on that prompt.
