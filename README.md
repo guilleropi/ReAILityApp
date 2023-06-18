@@ -1,6 +1,7 @@
 # Re-AI-lity App
 <p align="center">
   <img height="300" src="app_screenshot.png">
+  <img height="300" src="app_screenshot_2.png">
 </p>
 
 ## Description
