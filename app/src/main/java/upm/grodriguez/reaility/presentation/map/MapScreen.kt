@@ -32,9 +32,12 @@ fun MapScreen(
     var isFirstTime by remember { mutableStateOf(true) }
     var mapStyleJson by remember { mutableStateOf("") }
 
-    if (isFirstTime) {
-        viewModel.updateCurrentLocation(context = LocalContext.current)
-
+    if (isFirstTime)
+    {
+        if (viewModel.locationPermissionGranted && viewModel.currentLocation == null)
+        {
+            viewModel.updateCurrentLocation(context = LocalContext.current)
+        }
         mapStyleJson = try {
             context.assets.open("map/style.json")
                 .bufferedReader()

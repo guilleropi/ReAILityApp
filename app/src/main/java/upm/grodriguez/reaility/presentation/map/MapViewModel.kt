@@ -47,7 +47,13 @@ class MapViewModel @Inject constructor(
     }
 
     fun updateCurrentLocation(context: Context) = viewModelScope.launch(Dispatchers.IO) {
-        currentLocation = locRepo.getCurrentLocation(context)
+        try {
+            currentLocation = locRepo.getCurrentLocation(context)
+        }
+        catch (e: Exception)
+        {
+            Log.e("MapViewModel", "Error getting current location: ${e.message}")
+        }
     }
 
     fun getCreations() = viewModelScope.launch(Dispatchers.Main) {
