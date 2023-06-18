@@ -1,6 +1,7 @@
 # Re-AI-lity App
 <p align="center">
   <img height="300" src="app_screenshot.png">
+  <img height="300" src="app_screenshot_2.png">
 </p>
 
 ## Description
@@ -15,3 +16,5 @@ Add the following to your `local.properties` file in the root of the project:
 MAPS_API_KEY="Your Google Maps API KEY"
 OPEN_AI_API_KEY="Your OpenAI API KEY"
 ```
+
+Add `google-services.json` downloaded from Firebase to `app/` folder.
